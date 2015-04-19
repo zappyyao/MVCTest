@@ -1,0 +1,34 @@
+﻿@model MVC2.Models.clsLogin
+
+@{
+    ViewBag.Title = "LoginD";
+}
+
+<h2>LoginD</h2>
+
+<div>
+    <h4>clsLogin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Account)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pw)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
